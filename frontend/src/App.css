@@ -1,0 +1,115 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f3f4f6;
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.card {
+  width: 100%;
+  max-width: 600px;
+  background: white;
+  padding: 32px;
+  border-radius: 18px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+  text-align: center;
+}
+
+h1 {
+  margin-top: 0;
+  color: #111827;
+}
+
+.subtitle {
+  color: #4b5563;
+  line-height: 1.6;
+}
+
+.subtitle span {
+  color: #2563eb;
+  font-weight: bold;
+}
+
+.connected {
+  margin: 18px 0;
+  padding: 12px;
+  border-radius: 10px;
+  background: #dcfce7;
+  color: #166534;
+  font-weight: bold;
+}
+
+.disconnected {
+  margin: 18px 0;
+  padding: 12px;
+  border-radius: 10px;
+  background: #fee2e2;
+  color: #991b1b;
+  font-weight: bold;
+}
+
+.buttons {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 22px 0;
+}
+
+button {
+  border: none;
+  padding: 12px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  color: white;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.start-btn {
+  background: #2563eb;
+}
+
+.stop-btn {
+  background: #dc2626;
+}
+
+.test-btn {
+  background: #111827;
+}
+
+.box {
+  margin-top: 14px;
+  padding: 16px;
+  text-align: left;
+  background: #f9fafb;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+}
+
+.box h3 {
+  margin-top: 0;
+  margin-bottom: 8px;
+  color: #111827;
+}
+
+.box p {
+  margin: 0;
+  color: #374151;
+  line-height: 1.5;
+}
