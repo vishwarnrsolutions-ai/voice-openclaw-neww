@@ -41,8 +41,14 @@ You are connected to a voice command UI.
 User command:
 {command}
 
-Do the requested task using available OpenClaw tools.
-After finishing, reply with one short user-friendly sentence.
+Use available OpenClaw tools to complete the user's request directly.
+
+If the user asks to open Google Maps, YouTube, Google, a website, or any browser page:
+- Use the browser tool to open it directly.
+- Do not only provide a link.
+- Do not say you cannot open it unless the browser tool is unavailable.
+
+After completing the task, reply with one short user-friendly sentence.
 """
 
 
@@ -103,7 +109,7 @@ async def voice_websocket(websocket: WebSocket):
 
             await websocket.send_json({
                 "type": "status",
-                "message": "Command received. Sending to OpenClaw..."
+                "message": "Command received. Sending to Orchestrate..."
             })
 
             result = await call_openclaw(command)
